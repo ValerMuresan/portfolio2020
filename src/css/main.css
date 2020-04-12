@@ -1,0 +1,143 @@
+*  {
+    margin: 0;
+    padding: 0;
+  }
+ html {
+   height: 100%;
+ }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    background-color: #dadbe7;
+     }
+ .headnav {
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 7px #b7d1f7;
+  background-color: #422602ea;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 1000;
+}
+.my__name {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-left: 1rem;
+  color: #ebe0e0;
+  letter-spacing: 2px;
+}
+.nav__container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.navigation__items {
+  color: #ebe0e0;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.navigation__items ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.navigation__items li a {
+  padding: 0 1rem;
+  letter-spacing: 3px; 
+  cursor: pointer;
+  text-decoration: none;
+  color: #ebe0e0;
+}
+.navigation__items li a:hover,
+.navigation__items li a:active {
+  color: #ee5d5d;
+}
+.space_1 {
+  flex: 1;
+}
+.space_2 {
+  flex: 1;
+}
+.side__list {
+  height: 23%;
+  background-color: #422602ea;
+  -webkit-box-shadow: 3px 3px 5px 0px #b7d1f7;
+          box-shadow: 3px 3px 5px 0px #b7d1f7;
+  position: fixed;
+  top: 70px;
+  left: -40%;
+  width: 11%;
+  z-index: 200;
+  border-bottom-right-radius: 15px;
+  -webkit-transition: left 0.3s ease-out;
+  -o-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out;
+}
+.side__list.show {
+  left: 0;
+}
+
+.side__list ul a {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: left;
+  text-decoration: none;
+}
+.side__list li a {
+  color: #ebe0e0;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin: 0.5rem ;
+  border-bottom: 1px solid #ebe0e0;
+}
+.side__list li a:hover,
+.side__list li a:active {
+  color: #ee5d5d;
+}
+
+@media (max-width: 840px) {
+  .navigation__items {
+    display: none;
+  }
+  .side__list {
+    width: 23%;
+  }
+
+}
+@media (min-width: 841px) {
+  .side__list {
+    width: 15%;
+  }
+}
+
+@media (min-width: 841px) {
+  .menu {
+     display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .side__list {
+    width: 36%;
+    height: 28%;
+  }
+}
+@media (max-width: 360px) {
+  .side__list {
+    width: 40%;
+    height: 30%;
+  }
+  .my__name {
+    font-size: 1.5rem;
+  }
+  .side__list li a {
+    font-size: 1rem;
+  }
+}

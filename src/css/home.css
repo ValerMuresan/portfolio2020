@@ -1,0 +1,96 @@
+
+.home__container{
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .home_image {
+    /* Photo by JESHOOTS.COM on Unsplash */
+    background-image: url('../images/home.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 71px;
+    z-index: 100;
+  }
+  .profile-img img {
+    position: fixed;
+    top: 75px;
+    right: 37%;
+    z-index: 200;
+    border-radius: 50%;
+    height: 280px;
+    width: 250px;
+    border: 0.5vh solid #ee5d5d;
+  }
+  .auto_type {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.5rem;
+      color: #ee5d5d;
+      position: fixed;
+      top: 60%;
+      left: 25%;
+  }
+  @media (max-width: 840px) {
+    .profile-img img {
+      position: fixed;
+      right: 35%;
+    }
+    .auto_type {
+      position: fixed;
+      top: 60%;
+      left: 15%;
+    }
+  }
+  @media (max-width: 675px) {
+    .auto_type {
+      position: fixed;
+      top: 60%;
+      left: 7%;
+      font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 610px) {
+    .auto_type {
+      position: fixed;
+      top: 60%;
+      left: 5%;
+    }
+  }
+  @media (max-width: 599px) {
+    .profile-img img {
+      position: fixed;
+      right: 27%;
+    }
+    .auto_type {
+      position: fixed;
+      top: 65%;
+      left: 12%;
+    }
+  }
+  @media (max-width: 499px) {
+    .profile-img img {
+      position: fixed;
+      right: 21%;
+    }
+  }
+  @media (max-width: 399px) {
+    .profile-img img {
+      position: fixed;
+      right: 8%;
+    }
+    .auto_type {
+      position: fixed;
+      top: 75%;
+      left: 5%;
+    }
+  }
